@@ -1,0 +1,9 @@
+[Unit]
+Description=Prometheus exporter for pacman metrics
+Documentation=https://github.com/audebert/promtheus-pacman
+
+[Service]
+ExecStart=/usr/bin/prometheus-pacman
+
+[Install]
+WantedBy=multi-user.target
